@@ -13,4 +13,4 @@ Post.create([
   ])
 
 twochainz = Post.first
-twochainz.comments.create(body: "Man this joint crank", created_at: "2 days ago")
+twochainz.comments.create(body: "Man this joint crank", created_at: "2 days ago.")
