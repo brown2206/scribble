@@ -2,7 +2,7 @@
 <%= link_to "Create New Post", new_post_path %>
 <ul>
   <% @posts.each do |post| %>
-  <li> <%= post.title %> </li>
-  <li> <img src="<%= post.img_url%>">
+  <li> <%= link_to post.title, post_path(post) %> </li>
+  <li> <img src="<%= post.img_url%>"> </li><br>
   <% end %>
 </ul>
