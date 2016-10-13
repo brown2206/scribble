@@ -1,7 +1,7 @@
 <h2>All Posts</h2>
-
+<%= link_to "Create New Post", new_post_path %>
 <ul>
-  <% @post.each do |post| %>
+  <% @posts.each do |post| %>
   <li> <%= post.title %> </li>
   <li> <img src="<%= post.img_url%>">
   <% end %>
